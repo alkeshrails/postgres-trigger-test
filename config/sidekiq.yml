@@ -1,0 +1,10 @@
+development:
+  :concurrency: 1
+production:
+  :concurrency: 1
+:queues:
+  - default
+:schedule:
+  trigger_logger_job:
+    every: 15s   # Runs once per 15 seconds
+    class: TriggerLoggerJob
